@@ -28,3 +28,7 @@ void Init(unsigned *mat)
         mat=mat-step;
     }
 }
+bool quas(void)
+{
+return true;
+}
