@@ -30,5 +30,22 @@ void Init(unsigned *mat)
 }
 bool quas(void)
 {
+    int ans;
+    cout << "Your shot is not correctly. Continue?(0/1)" << endl;
+    cin >> ans;
+    if(ans==1)
+    {
 return true;
+    }
+    return false;
+}
+void InitMas(unsigned *mat)
+{
+    unsigned mas[20]={14,15, 16, 32, 34, 39, 40, 59, 60, 63, 74, 80, 85, 89, 96, 100, 113, 114, 115, 120};
+    for(unsigned i=0; i<20; i=i+1)
+    {
+        mat=mat+mas[i];
+        *mat=1;
+        mat=mat-mas[i];
+    }
 }
