@@ -1,5 +1,7 @@
 #include "game.h"
 
+#define Q_WS_WIN
+
 #ifdef Q_WS_WIN
 #include <windows.h>
 #else // linux
